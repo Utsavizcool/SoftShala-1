@@ -1,0 +1,14 @@
+body {
+    padding-top: 0px;
+    font-family: "Poppins", sans-serif !important;
+    background: linear-gradient(80deg,gray, rgba(255, 255, 255, 0.584),rgba(255, 255, 255, 0.584),rgba(255, 255, 255, 0.584),gray);
+    cursor: pointer;
+}
+
+.main-body-contact
+{
+     min-height: auto;
+    padding-top: 0px;
+    margin-top: 150px;
+    font-family: "Poppins", sans-serif !important;
+}

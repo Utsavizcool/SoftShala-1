@@ -1,0 +1,166 @@
+body
+{
+    padding-top: 0px;
+    font-family: "Poppins", sans-serif !important;
+    cursor: pointer;
+}
+.main-body
+{
+    min-height: auto;
+    padding-top: 0px;
+    margin-top: 100px;
+    font-family: "Poppins", sans-serif !important;
+}
+.navbar-nav
+{
+    font-size: larger;
+    gap: 2rem;
+}
+.navbar
+{
+    padding: 1rem;
+    background-color: #212529 !important;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar .nav-link {
+    color: white !important;
+}
+.navbar .nav-link:hover {
+    color: rgb(132, 132, 250) !important;
+}
+nav {
+    transition: box-shadow 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+nav:hover{
+    box-shadow: 0 8px 40px 8px rgba(255, 0, 102, 0.18);
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 4px 24px rgba(132, 132, 250, 0.15);
+    }
+
+    100% {
+        box-shadow: 0 8px 40px 8px rgba(255, 0, 102, 0.18);
+    }
+}
+.main-body h1
+{
+    margin-bottom: 1rem;
+    font-weight: bolder;
+    font-size: 60px ;
+}
+.main-body p
+{
+    font-size: larger;
+}
+.button
+{
+    gap: 1rem;
+}
+.btn {
+  color: purple;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid purple;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.btn:hover {
+  color: white;
+  z-index: 2;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: purple;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.btn:hover::before {
+  width: 160%;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  right: -40px;
+  transform: skewX(-45deg);
+  background-color: rgb(98, 27, 98);
+  z-index: -1;
+  transition: all 1s;
+}
+.btn:hover::after {
+  width: 160%;
+}
+.ad{
+  width: 50%;
+  background-color: transparent;
+}
+.ad img{    
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    animation: adPulse 1.5s infinite alternate, adGlow 2s infinite alternate;
+    transition: transform 0.3s;
+}
+.ad img{
+  height: 100%;
+  width: 100%;
+}
+.ad:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 32px rgba(98, 27, 98, 0.18);
+}
+
+@keyframes adPulse {
+    0% {
+        background-color: #f0f0f0;
+    }
+
+    100% {
+        background-color: #ffe4ec;
+    }
+}
+
+@keyframes adGlow {
+    0% {
+        box-shadow: 0 4px 24px rgba(132, 132, 250, 0.15);
+    }
+
+    100% {
+        box-shadow: 0 8px 40px 8px rgba(255, 0, 102, 0.18);
+    }
+}
+.footer-content
+{
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}

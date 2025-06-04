@@ -1,0 +1,20 @@
+.main-body-about {
+    min-height: auto;
+    padding-top: 0px;
+    margin-top: 100px;
+    font-family: "Poppins", sans-serif !important;
+}
+body {
+    padding-top: 0px;
+    font-family: "Poppins", sans-serif !important;
+    cursor: pointer;
+}
+.card{
+   
+    box-shadow: 0 8px 32px gray;
+}
+.card:hover{
+    box-shadow: 0 12px 48px rgb(65, 65, 65);
+    transform: scale(1.02);
+    cursor: pointer;
+}
